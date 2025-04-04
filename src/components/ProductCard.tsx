@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
 interface ProductCardProps {
-  id: string;
+  id: number | string;
   title: string;
   price: number;
   image: string;
@@ -13,7 +13,7 @@ interface ProductCardProps {
 }
 
 const ProductCard = ({
-  id = "1",
+  id = 1,
   title = "Product Title",
   price = 99.99,
   image = "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&q=80",
